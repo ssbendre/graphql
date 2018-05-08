@@ -1,0 +1,29 @@
+.header-container {
+    position: fixed;
+    top: 0;
+    background-color: #007bff;
+    height: 3em;
+    width: 100%;
+}
+
+.header-logo {
+    height: 2em;
+    margin: 8px 0 0 11px;
+}
+
+.tabs{
+    position: absolute;
+    align-self: center;
+    z-index: 2;
+    top: 3px;
+    width: 100%;
+}
+
+.header-title{
+    z-index: 2;
+    position: absolute;
+    left: 63px;
+    color: white;
+    font-size: large;
+    top: 0.6em;
+}
