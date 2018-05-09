@@ -14,6 +14,9 @@ var userSchema = new Schema({
   },
   email: {
     type: String
+  },
+  gender: {
+    type: String
   }
 });
 var Model = mongoose.model('User', userSchema);

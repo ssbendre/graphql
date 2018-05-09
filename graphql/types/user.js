@@ -24,6 +24,9 @@ exports.userType = new GraphQLObjectType({
       },
       email: {
         type: GraphQLString
+      },
+      gender: {
+        type: GraphQLString
       }
     }
   }

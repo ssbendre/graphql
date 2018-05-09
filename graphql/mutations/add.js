@@ -18,6 +18,9 @@ exports.add = {
     },
     email: {
       type: GraphQLString
+    },
+    gender: {
+      type: GraphQLString
     }
   },
   resolve(root, params) {

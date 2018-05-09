@@ -21,12 +21,15 @@ exports.update = {
     },
     email: {
       type: GraphQLString
+    },
+    gender: {
+      type: GraphQLString
     }
   },
   resolve(root, params) {
     return UserModel.findByIdAndUpdate(
       params.id,
-      { $set: { name: params.name, address: params.address, phone: params.phone, email: params.email } },
+      { $set: { name: params.name, address: params.address, phone: params.phone, email: params.email, gender: params.gender } },
       { new: true }
     )
       .catch(err => new Error(err));
