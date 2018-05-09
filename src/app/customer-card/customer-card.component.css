@@ -1,0 +1,27 @@
+.card-cantainer{
+    width: 21em;
+    height: 13em;
+    border-bottom: 1px solid #8080802b;
+    border-right: 1px solid #8080802b;
+    border-left: 1px solid #8080802b;
+}
+
+.card-cantainer .card-header{
+    height: 16%;
+    align-items: center;
+    display: flex;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-cantainer img{
+    height: 8em;
+    margin: 1em 0 0 1em;
+}
+
+.card-cantainer .card-title{
+    display: inline;
+    font-size: larger;
+}
