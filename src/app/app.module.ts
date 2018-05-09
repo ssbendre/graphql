@@ -10,6 +10,7 @@ import { CustomerManagerComponent } from './customer-manager/customer-manager.co
 import { CustomerInfoComponent } from './customer-info/customer-info.component';
 import { TabsetComponent } from './tabset/tabset.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GraphQLModule } from './graphql.module';
 
 const routes = [
     {
@@ -36,7 +37,8 @@ const routes = [
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    RouterModule.forRoot(routes, {useHash: true})
+    RouterModule.forRoot(routes, {useHash: true}),
+    GraphQLModule
   ],
   providers: [],
   bootstrap: [AppComponent]
