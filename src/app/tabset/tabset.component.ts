@@ -14,7 +14,7 @@ import 'rxjs/add/operator/map';
   providers: [NgbTabsetConfig] // add NgbTabsetConfig to the component providers
 })
 export class TabsetComponent implements OnInit {
-  private customerList: Array<any> = [];
+  private customerList = [];
   private customerRes: Array<any> = [];
   private page = 1;
   private start = 0; 
@@ -50,7 +50,6 @@ export class TabsetComponent implements OnInit {
     this.apollo.watchQuery({ query: Query.Users })
       .valueChanges
       .map((result: any) => result.data.users).subscribe((data) => {
-        console.log(data);
         this.customerRes = data;
       })
   }

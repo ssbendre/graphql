@@ -35,3 +35,7 @@
 .card{
     margin: 0 2em 2em 0;
 }
+
+.list-cursor{
+    cursor: pointer;
+}

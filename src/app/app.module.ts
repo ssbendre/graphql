@@ -21,8 +21,8 @@ const routes = [
         path: 'home',
         component: AppComponent
     }, {
-        path: 'home2',
-        component: AppComponent
+        path: 'customer',
+        component: CustomerManagerComponent
     }
 ];
 @NgModule({

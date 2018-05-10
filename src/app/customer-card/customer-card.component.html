@@ -1,5 +1,5 @@
 <div class="card-cantainer">
-  <div class="card-header">{{details.name}}<i class="fas fa-edit edit"></i></div>
+  <div class="card-header edit">{{details.name}}<i class="fas fa-edit edit" (click)="goToCustomerEditPage()"></i></div>
   <img *ngIf="details.gender == 'male'" src="http://ideainside.co.in/wp-content/uploads/2017/10/Engineer-150x150.png" alt="">
   <img *ngIf="details.gender == 'female'" src="https://img3.stockfresh.com/files/k/kraska/m/60/808336_stock-photo-user-icon.jpg" alt="">
   <h3 class="card-title">{{details.address}}</h3>
