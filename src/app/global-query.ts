@@ -7,12 +7,30 @@
 import gql from 'graphql-tag';
 
 export const addUser = gql`
-  mutation addUser($name: String!, $address: String, $phone: String, $email: String, $gender: String) {
-    addUser(name: $name, address: $address, phone: $phone, email: $email, gender: $gender) {
+  mutation addUser(
+    $firstName: String!,
+    $lastName: String,
+    $address: String,
+    $city: String,
+    $state: String,
+    $email: String,
+    $gender: String
+  ) {
+    addUser(
+      firstName: $firstName,
+      lastName: $lastName,
+      address: $address,
+      city: $city,
+      state: $state,
+      email: $email,
+      gender: $gender
+    ) {
       id
-      name
+      firstName
+      lastName
       address
-      phone
+      city
+      state
       email
       gender
     }
@@ -22,9 +40,11 @@ export const Users = gql`
   query {
     users{
       id
-      name
+      firstName
+      lastName
       address
-      phone
+      city
+      state
       email
       gender
     }
@@ -34,21 +54,42 @@ export const removeUser = gql`
   mutation removeUser($id: String!) {
     removeUser(id: $id) {
       id
-      name
+      firstName
+      lastName
       address
-      phone
+      city
+      state
       email
       gender
     }
   }`;
 
 export const updateUser = gql`
-  mutation updateUser($id: String!, $name: String, $address: String, $phone: String, $email: String, $gender: String) {
-    updateUser(id: $id, name: $name, address: $address, phone: $phone, email: $email, gender: $gender) {
+  mutation updateUser(
+    $id: String!,
+    $firstName: String,
+    $lastName: String,
+    $address: String,
+    $city: String,
+    $state: String,
+    $email: String,
+    $gender: String
+  ) {
+    updateUser(
+      id: $id,
+      firstName: $firstName,
+      lastName: $lastName,
+      address: $address,
+      city: $city,
+      state: $state,
+      email: $email,
+      gender: $gender
+    ) {
       id
-      name
+      firstName
+      lastName
       address
-      phone
+      city
       email
       gender
     }

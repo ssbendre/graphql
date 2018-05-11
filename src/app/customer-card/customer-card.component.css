@@ -1,6 +1,6 @@
 .card-cantainer{
-    width: 21em;
-    height: 13em;
+    width: 16em;
+    height: 8.5em;
     border-bottom: 1px solid #8080802b;
     border-right: 1px solid #8080802b;
     border-left: 1px solid #8080802b;
@@ -14,19 +14,27 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    padding: 12px 5px 12px 5px;
 }
 
 .card-cantainer img{
-    height: 8em;
-    margin: 1em 0 0 1em;
+    height: 3em;
 }
 
 .card-cantainer .card-title{
     display: inline;
-    font-size: larger;
+    font-size: 14px;
     margin: 0em 0em 0em 2em;
 }
 
 .edit{
     cursor: pointer;
+}
+
+.card-cantainer .card-body{
+    display: flex;
+}
+
+.card-cantainer .card-body .card-title .card-address{
+    font-size: 12px;
 }

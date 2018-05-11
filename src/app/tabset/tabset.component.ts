@@ -16,9 +16,10 @@ import 'rxjs/add/operator/map';
 export class TabsetComponent implements OnInit {
   private customerList = [];
   private customerRes: Array<any> = [];
-  private page = 1;
-  private start = 0; 
-  private end = 8; 
+  private pageCount = 1;
+  private pageSize = 12;
+  private start = 0;
+  private end = 8;
 
   constructor(private router: Router, config: NgbTabsetConfig, private apollo: Apollo) {
     // customize default values of tabsets used by this component tree
@@ -30,13 +31,13 @@ export class TabsetComponent implements OnInit {
     this.getUsers();
   }
 
-  ngDoCheck(){
-    this.start = 8 * (this.page - 1);
-    this.end = 8 * this.page;
+  ngDoCheck() {
+    this.start = this.pageSize * (this.pageCount - 1);
+    this.end = this.pageSize * this.pageCount;
     this.customerList = this.customerRes.slice(this.start, this.end);
   }
 
-  test(){
+  test() {
     this.router.navigate(['home']);
   }
 
