@@ -7,13 +7,19 @@ var UserModel = require('../../models/user');
 exports.add = {
   type: UserType.userType,
   args: {
-    name: {
-      type: new GraphQLNonNull(GraphQLString)
+    firstName: {
+      type: GraphQLString
+    },
+    lastName: {
+      type: GraphQLString
     },
     address: {
       type: GraphQLString
     },
-    phone: {
+    city: {
+      type: GraphQLString
+    },
+    state: {
       type: GraphQLString
     },
     email: {

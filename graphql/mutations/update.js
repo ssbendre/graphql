@@ -10,13 +10,19 @@ exports.update = {
       name: 'id',
       type: new GraphQLNonNull(GraphQLString)
     },
-    name: {
-      type: GraphQLString,
+    firstName: {
+      type: GraphQLString
+    },
+    lastName: {
+      type: GraphQLString
     },
     address: {
       type: GraphQLString
     },
-    phone: {
+    city: {
+      type: GraphQLString
+    },
+    state: {
       type: GraphQLString
     },
     email: {
