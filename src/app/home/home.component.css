@@ -1,0 +1,43 @@
+/*styles for home content only*/
+
+.customer-header {
+    display: inline;
+}
+
+.customer-header-container{
+    margin: 4.5em 0 0 4.4em;
+}
+
+.customer-body-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 14em 0 6em;
+}
+
+.menu-title{
+    display: contents;
+}
+
+.customer-pagination{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    padding: 5em 0em 2em 4.5em;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 0 2em 2em 0;
+}
+
+.list-cursor{
+    cursor: pointer;
+}

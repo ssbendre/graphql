@@ -1,0 +1,25 @@
+<div class="customer-header-container">
+    <i class="fas fa-user fa-2x"></i> 
+    <h5 class="customer-header">Customers</h5>
+  </div>
+
+  <div class="customer-body-container">
+    <ul class="fa-ul menu-title">
+      <li class="list-cursor"><span class="fa-li"><i class="fas fa-th-large"></i></span>Card View</li>
+      <li class="list-cursor"><span class="fa-li"><i class="fas fa-align-justify"></i></span>List View</li>
+      <li class="list-cursor"><span class="fa-li"><i class="fas fa-plus"></i></span>New Customer</li>
+      <li class="list-cursor"><span class="fa-li"><label for="">Filter:</label>
+        <input type="text"></span>
+      </li>
+    </ul>
+</div>
+
+<div class="card-container">
+  <div *ngFor="let customer of customerList; let i = index">
+    <app-customer-card [details]="customer" class="card"></app-customer-card>
+  </div>
+</div>
+
+<div class="customer-pagination">
+    <ngb-pagination [collectionSize]="70" [(page)]="pageCount" aria-label="Default pagination"></ngb-pagination>
+</div> 
