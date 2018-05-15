@@ -4,6 +4,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { environment } from 'environments/environment';
 import { AppState } from './app.service';
+import { Router } from '@angular/router';
 
 /**
  * App Component
@@ -25,13 +26,17 @@ export class AppComponent implements OnInit {
   public showDevModule: boolean = environment.showDevModule;
 
   constructor(
-    public appState: AppState
+    public appState: AppState,
+    private router: Router
   ) {}
 
   public ngOnInit() {
     console.log('Initial App State', this.appState.state);
   }
 
+  private goToHomePage() {
+    this.router.navigate(['home']);
+  }
 }
 
 /**

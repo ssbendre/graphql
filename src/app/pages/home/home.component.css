@@ -29,9 +29,17 @@
 
 .card-container{
     display: flex;
-    flex-direction: row;
     padding: 5em 0em 2em 4.5em;
     flex-wrap: wrap;
+}
+
+.card-list{
+    flex-direction: row;
+    padding: 5em 56.4em 0 4.5em;
+}
+
+.card-grid{
+    flex-direction: row;
 }
 
 .card{
@@ -40,4 +48,5 @@
 
 .list-cursor{
     cursor: pointer;
+    user-select: none;
 }

@@ -1,7 +1,7 @@
 <div class="card-cantainer">
   <div class="card-header edit">
     <span (click)="goToCustomerInfoPage(details)">{{details.firstName}} {{details.lastName}}</span>
-    <i class="fas fa-edit edit" (click)="goToCustomerEditPage(details)"></i>
+    <i class="fas fa-edit edit fa-sm" (click)="goToCustomerEditPage(details)"></i>
   </div>
   <div class="card-body">
     <img *ngIf="details.gender == 'male'" src="http://ideainside.co.in/wp-content/uploads/2017/10/Engineer-150x150.png" alt="">

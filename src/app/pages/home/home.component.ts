@@ -44,7 +44,8 @@ export class HomeComponent implements OnInit {
   private pageSize = 12;
   private start = 0;
   private end = 8;
-  private searchText = 'Dorothy Chesterfield';
+  private searchText;
+  private layout = 'grid';
   /**
    * TypeScript public modifiers
    */
@@ -81,5 +82,9 @@ export class HomeComponent implements OnInit {
    */
   public getCustomer() {
     this.customerService.getCustomerData().subscribe((data) => this.customerRes = data );
+  }
+
+  private changeView() {
+    (this.layout === 'grid') ? this.layout = 'list' : this.layout = 'grid';
   }
 }
