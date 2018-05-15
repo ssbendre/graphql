@@ -1,0 +1,81 @@
+<i class="fas fa-user user-icon"></i> 
+<span>{{customerRes.firstName}} {{customerRes.lastName}}</span>
+
+<div class="edit-customer-container">
+        <div>
+                First Name 
+        </div>
+        <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                        <span class="input-group-text span-style" id="inputGroup-sizing-sm"></span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="{{customerRes.firstName}}">
+        </div>
+
+        <div>
+                        Last Name
+        </div>
+        <div class="input-group input-group-sm mb-3">
+                
+                <div class="input-group-prepend">
+                        <span class="input-group-text span-style" id="inputGroup-sizing-sm"></span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="{{customerRes.lastName}}">
+        </div>
+
+        <div>
+                        Gender
+        </div>
+        <input type="radio" name="gender" aria-label="Radio button for following text input display-block" [checked]="customerRes.gender === 'male'"> Male
+        <input type="radio" name="gender" aria-label="Radio button for following text input display-block" [checked]="customerRes.gender === 'female'"> Female
+
+        <div>
+                        Email
+        </div>
+        <div class="input-group input-group-sm mb-3">
+                
+                <div class="input-group-prepend">
+                        <span class="input-group-text span-style" id="inputGroup-sizing-sm"></span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="{{customerRes.email}}">
+        </div>
+
+        <div>
+                        Address
+        </div>
+        <div class="input-group input-group-sm mb-3">
+                
+                <div class="input-group-prepend">
+                        <span class="input-group-text span-style" id="inputGroup-sizing-sm"></span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="{{customerRes.address}}">
+        </div>
+
+        <div>
+                        City
+        </div>
+        <div class="input-group input-group-sm mb-3">
+                
+                <div class="input-group-prepend">
+                        <span class="input-group-text span-style span-style" id="inputGroup-sizing-sm"></span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="{{customerRes.city}}">
+        </div>
+
+        <div>
+                        State
+        </div>
+        <div class="input-group input-group-sm mb-3">
+                
+                <div class="input-group-prepend">
+                        <span class="input-group-text span-style" id="inputGroup-sizing-sm"></span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="{{customerRes.state}}">
+        </div>
+
+        <div class="button-group">
+                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="button" class="btn btn-success float-right">Update</button>
+                <button type="button" class="btn btn-outline-primary float-right margin-right">Cancel</button>
+        </div>
+</div>

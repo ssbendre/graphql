@@ -14,13 +14,13 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
-import { HomeComponent } from './home';
-import { CustomerCardComponent } from './customer-card';
-import { AboutComponent } from './about';
-import { EditCustomerCardComponent } from './edit-customer';
-import { NoContentComponent } from './no-content';
-import { XLargeDirective } from './home/x-large';
-import { DevModuleModule } from './+dev-module';
+import { HomeComponent } from './pages/home';
+import { CustomerCardComponent } from './components/customer-card';
+import { AboutComponent } from './pages/about';
+import { EditCustomerCardComponent } from './pages/edit-customer';
+import { CustomerInfoComponent } from './pages/customer-info';
+import { NoContentComponent } from './pages/no-content';
+import { GoogleMapComponent } from './components/google-map';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import '../styles/styles.scss';
@@ -47,10 +47,11 @@ interface StoreType {
     AppComponent,
     AboutComponent,
     EditCustomerCardComponent,
+    CustomerInfoComponent,
     HomeComponent,
     CustomerCardComponent,
     NoContentComponent,
-    XLargeDirective
+    GoogleMapComponent
   ],
   /**
    * Import Angular's modules.
@@ -71,7 +72,6 @@ interface StoreType {
      * When the module is not imported it will get tree shaked.
      * This is a simple example, a big app should probably implement some logic
      */
-    ...environment.showDevModule ? [ DevModuleModule ] : [],
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.
