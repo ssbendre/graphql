@@ -44,6 +44,7 @@ export class HomeComponent implements OnInit {
   private pageSize = 12;
   private start = 0;
   private end = 8;
+  private searchText = 'Dorothy Chesterfield';
   /**
    * TypeScript public modifiers
    */

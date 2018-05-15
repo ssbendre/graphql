@@ -23,6 +23,8 @@ import { NoContentComponent } from './pages/no-content';
 import { GoogleMapComponent } from './components/google-map';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { FilterPipe } from './filters/array-filter';
+
 import '../styles/styles.scss';
 import '../styles/headings.css';
 
@@ -51,7 +53,8 @@ interface StoreType {
     HomeComponent,
     CustomerCardComponent,
     NoContentComponent,
-    GoogleMapComponent
+    GoogleMapComponent,
+    FilterPipe
   ],
   /**
    * Import Angular's modules.
