@@ -73,9 +73,10 @@
                 <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="{{customerRes.state}}">
         </div>
 
-        <div class="button-group">
+        <div class="button-group" *ngIf="!showSaveBtn">
                 <button type="button" class="btn btn-danger">Delete</button>
                 <button type="button" class="btn btn-success float-right">Update</button>
                 <button type="button" class="btn btn-outline-primary float-right margin-right">Cancel</button>
         </div>
+        <button *ngIf="showSaveBtn" type="button" class="btn btn-success float-right">Save</button>
 </div>

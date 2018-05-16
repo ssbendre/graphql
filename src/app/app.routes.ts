@@ -11,5 +11,6 @@ export const ROUTES: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'customer/info/:id', component: CustomerInfoComponent },
   { path: 'customer/:id', component: EditCustomerCardComponent },
+  { path: 'customer', component: EditCustomerCardComponent },
   { path: '**',    component: NoContentComponent },
 ];

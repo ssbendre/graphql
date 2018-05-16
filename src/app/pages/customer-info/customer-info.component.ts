@@ -24,7 +24,6 @@ export class CustomerInfoComponent implements OnInit {
 
   public ngOnInit() {
     this.getCustomerDetails(this.customerId);
-    console.log('SSSS', this.customerRes);
   }
 
   private getCustomerDetails(customerId) {

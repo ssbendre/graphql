@@ -9,7 +9,7 @@ import { AppState } from '../../app.service';
 import { Title } from './title';
 import { CustomerService } from '../../services/customer';
 import { XLargeDirective } from './x-large';
-
+import { Router } from '@angular/router';
 @Component({
   /**
    * The selector is what angular internally uses
@@ -53,6 +53,7 @@ export class HomeComponent implements OnInit {
     public appState: AppState,
     public customerService: CustomerService,
     config: NgbTabsetConfig,
+    private router: Router
   ) {
     config.justify = 'center';
     config.type = 'pills';
@@ -86,5 +87,9 @@ export class HomeComponent implements OnInit {
 
   private changeView() {
     (this.layout === 'grid') ? this.layout = 'list' : this.layout = 'grid';
+  }
+
+  private goToCustomerPage() {
+    this.router.navigate(['customer']);
   }
 }

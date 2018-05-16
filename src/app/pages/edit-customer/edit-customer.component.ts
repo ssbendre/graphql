@@ -14,6 +14,7 @@ export class EditCustomerCardComponent implements OnInit {
 
   private customerId;
   private customerRes = [];
+  private showSaveBtn = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,8 +24,13 @@ export class EditCustomerCardComponent implements OnInit {
   }
 
   public ngOnInit() {
-    this.getCustomerDetails(this.customerId);
-    console.log('SSSS', this.customerRes);
+
+    if (this.customerId) {
+      this.getCustomerDetails(this.customerId);
+    } else {
+      this.showSaveBtn = true;
+    }
+
   }
 
   private getCustomerDetails(customerId) {
