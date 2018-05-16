@@ -3,54 +3,38 @@
   margin: 6em 0 0 5em;
 }
 
-.span-style{
-  padding: 4px 4px !important;
-  background: #008000c9;
-}
-
 .edit-customer-container{
   padding: 2em 38em 0 5em;
   display: flex;
   flex-direction: inherit;
-}
 
-.float-right {
-  float: right;
-}
+  .user-img{
+    height: 9em;
+  }
+  
+  .user-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 2em;
+        
+    .clear-height{
+      height: 2em;
+    }
 
-.margin-right{
-  margin: 0 1em 0 0;
-}
+    .address{
+      font-size: smaller;
+    }
+  }
 
-.button-group{
-  margin: 3em 0 0 0;
-}
-
-.user-img{
-  height: 9em;
-}
-
-.user-info{
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 0 2em;
-}
-
-.clear-height{
-  height: 2em;
-}
-
-.address{
-  font-size: smaller;
 }
 
 .menu-items{
   display: flex;
   padding: 3em 5em;
-}
 
-.margin-right{
-  margin: 0 13em 0 0;
+  .margin-right{
+    margin: 0 13em 0 0;
+  }
 }
 
 .map-size{

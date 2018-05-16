@@ -1,21 +1,26 @@
 /*styles for home content only*/
 
-.customer-header {
-    display: inline;
-}
-
 .customer-header-container{
     margin: 4.5em 0 0 4.4em;
+    
+    .customer-header {
+        display: inline;
+    }
 }
 
 .customer-body-container{
     display: flex;
     justify-content: space-between;
     padding: 3em 14em 0 6em;
-}
+    
+    .menu-title{
+        display: contents;
 
-.menu-title{
-    display: contents;
+        .list-cursor{
+            cursor: pointer;
+            user-select: none;
+        }
+    }
 }
 
 .customer-pagination{
@@ -44,9 +49,4 @@
 
 .card{
     margin: 0 2em 2em 0;
-}
-
-.list-cursor{
-    cursor: pointer;
-    user-select: none;
 }

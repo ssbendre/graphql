@@ -27,7 +27,7 @@ import { Router } from '@angular/router';
   /**
    * Our list of styles in our component. We may add more to compose many styles together.
    */
-  styleUrls: [ './home.component.css' ],
+  styleUrls: [ './home.component.scss' ],
   /**
    * Every Angular template is first compiled by the browser before Angular runs it's compiler.
    */
@@ -85,8 +85,8 @@ export class HomeComponent implements OnInit {
     this.customerService.getCustomerData().subscribe((data) => this.customerRes = data );
   }
 
-  private changeView() {
-    (this.layout === 'grid') ? this.layout = 'list' : this.layout = 'grid';
+  private changeView(view) {
+    (view === 'list') ? this.layout = 'list' : this.layout = 'grid';
   }
 
   private goToCustomerPage() {

@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-customer-card',
   templateUrl: './customer-card.component.html',
-  styleUrls: ['./customer-card.component.css']
+  styleUrls: ['./customer-card.component.scss']
 })
 export class CustomerCardComponent implements OnInit {
 
