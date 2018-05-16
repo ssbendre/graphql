@@ -34,9 +34,6 @@ export class AppComponent implements OnInit {
     console.log('Initial App State', this.appState.state);
   }
 
-  private goToHomePage() {
-    this.router.navigate(['home']);
-  }
 }
 
 /**

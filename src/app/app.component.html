@@ -1,25 +1,4 @@
-<div class="header-container">
-    <img class="header-logo" src="http://perfildigital.com.co/wp-content/uploads/2016/01/people-icon.png" alt="">
-    <h2 class="header-title" (click)="goToHomePage()">Customer Manager</h2>
-    <nav>
-        <a [routerLink]=" ['./home'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Home
-        </a>
-        <a [routerLink]=" ['./orders'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Orders
-        </a>
-        <a [routerLink]=" ['./about'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        About
-        </a>
-        <a [routerLink]=" ['./login'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Login
-        </a>
-    </nav>
-</div>
+<header></header>
 
 <main>
     <router-outlet></router-outlet>

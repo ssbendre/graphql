@@ -14,15 +14,22 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+// Application pages
 import { HomeComponent } from './pages/home';
-import { CustomerCardComponent } from './components/customer-card';
 import { AboutComponent } from './pages/about';
 import { EditCustomerCardComponent } from './pages/edit-customer';
 import { CustomerInfoComponent } from './pages/customer-info';
 import { NoContentComponent } from './pages/no-content';
-import { GoogleMapComponent } from './components/google-map';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+// Custom components
+import { CustomerCardComponent } from './components/customer-card';
+import { GoogleMapComponent } from './components/google-map';
+import { HeaderComponent } from './components/header';
+import { FooterComponent } from './components/footer';
+
+// Application pipe/filters
 import { FilterPipe } from './filters/array-filter';
 
 import '../styles/styles.scss';
@@ -54,7 +61,9 @@ interface StoreType {
     CustomerCardComponent,
     NoContentComponent,
     GoogleMapComponent,
-    FilterPipe
+    FilterPipe,
+    HeaderComponent,
+    FooterComponent
   ],
   /**
    * Import Angular's modules.
